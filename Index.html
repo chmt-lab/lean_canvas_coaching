@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123a31">
+<title>Lean Canvas Coach — Student Prompt Kit</title>
+<style>
+:root{--ink:#17352e;--muted:#5b7169;--paper:#f5f3ec;--surface:#fffefa;--line:#dce3d9;--green:#17483d;--green2:#246653;--lime:#d7edaa;--gold:#f0bd58;--coral:#d86f51;--shadow:0 14px 38px rgba(26,55,45,.08);--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,"Leelawadee UI",sans-serif;line-height:1.65}button{font:inherit}a{color:inherit}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.topbar{background:var(--green);color:#f8f7ef;padding:13px 0;font-size:13px}.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-weight:800;letter-spacing:.04em}.topnote{color:#c8d8ce}.hero{background:var(--green);color:#f8f7ef;padding:54px 0 52px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:350px;height:350px;border:1px solid rgba(215,237,170,.2);border-radius:50%;right:-70px;top:-155px;box-shadow:0 0 0 35px rgba(215,237,170,.035),0 0 0 75px rgba(215,237,170,.025)}.eyebrow{color:var(--lime);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.hero h1{font-size:clamp(35px,6vw,65px);line-height:1.08;letter-spacing:-.04em;max-width:800px;margin:15px 0 16px}.hero p{font-size:17px;color:#d6e1d9;max-width:710px;margin:0}.hero-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:26px}.pill{border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:6px 12px;font-size:12px;color:#edf4eb}.pill b{color:var(--lime)}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.btn{border:0;border-radius:11px;padding:11px 16px;font-weight:800;cursor:pointer;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-1px)}.btn-lime{background:var(--lime);color:var(--green)}.btn-ghost{background:transparent;color:white;border:1px solid rgba(255,255,255,.35)}.btn-small{font-size:13px;padding:8px 12px;background:var(--green);color:white;border-radius:9px}.btn-copy{background:#eaf1e8;color:#214f41}.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.page{padding:34px 0 70px}.notice{background:#fff4d9;border:1px solid #efdaa4;border-radius:14px;padding:17px 20px;display:grid;grid-template-columns:auto 1fr;gap:13px;align-items:start;margin-bottom:26px}.notice .icon{font-size:20px}.notice strong{display:block;margin-bottom:2px}.notice p{margin:0;color:#614f2f;font-size:14px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:38px 0 16px}.section-head h2{margin:0;font-size:26px;letter-spacing:-.025em}.section-head p{margin:4px 0 0;color:var(--muted);font-size:14px}.step-map{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:18px 0 32px}.map-item{display:flex;gap:9px;align-items:center;text-decoration:none;background:var(--surface);border:1px solid var(--line);padding:10px;border-radius:12px;font-size:12px;font-weight:700;min-height:55px}.map-item:hover{border-color:var(--green2);background:#f3f7ee}.num{width:25px;height:25px;flex:none;display:grid;place-items:center;background:var(--green);color:white;border-radius:50%;font-size:12px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);margin:13px 0;overflow:hidden}.card-head{padding:20px 22px 12px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}.card-title{display:flex;gap:13px;align-items:flex-start}.step-badge{width:37px;height:37px;flex:none;display:grid;place-items:center;background:var(--lime);color:var(--green);border-radius:12px;font-weight:900}.card h3{margin:0;font-size:19px;line-height:1.35}.card-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.card-body{padding:0 22px 21px}.prompt{white-space:pre-wrap;overflow-wrap:anywhere;background:#f3f4ee;border:1px solid #e3e7df;color:#293e37;padding:17px;border-radius:12px;font:13px/1.72 ui-monospace,Consolas,monospace;max-height:260px;overflow:auto}.how{font-size:13px;color:var(--muted);margin:10px 0 0}.how b{color:var(--green)}.global-card{border:2px solid #bfd1be}.canvas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.block{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:17px;min-height:182px;box-shadow:0 6px 18px rgba(26,55,45,.035)}.block:nth-child(4){background:#f0f5e8}.block h3{font-size:14px;margin:0 0 5px;display:flex;gap:9px;align-items:center}.block .block-num{color:var(--green2);font-size:11px;letter-spacing:.06em}.block p{font-size:12px;color:var(--muted);margin:0 0 11px}.write-lines{font-size:12px;line-height:2.15;color:#92a197;border-top:1px dashed #d7ded5;padding-top:8px}.table-wrap{overflow-x:auto}.check-table{width:100%;border-collapse:collapse;background:var(--surface);border-radius:14px;overflow:hidden;font-size:13px}.check-table th,.check-table td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.check-table th{background:var(--green);color:white}.check-table tr:last-child td{border-bottom:0}.tag{font-size:11px;background:#edf3e7;color:var(--green);border-radius:999px;padding:3px 8px;white-space:nowrap}.site-steps{counter-reset:site;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.site-step{counter-increment:site;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}.site-step:before{content:counter(site,decimal-leading-zero);font-size:12px;font-weight:900;color:var(--green2);display:block;margin-bottom:5px}.site-step h3{font-size:15px;margin:0 0 5px}.site-step p{font-size:13px;color:var(--muted);margin:0}.code-mini{font:12px ui-monospace,Consolas,monospace;background:#eef1eb;border-radius:7px;padding:3px 6px;color:#294a3f}.sources{font-size:12px;color:var(--muted);margin-top:15px}.sources a{color:var(--green2)}.footer{border-top:1px solid var(--line);padding:20px 0 32px;color:var(--muted);font-size:12px}.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);background:#153d33;color:white;border-radius:999px;padding:11px 18px;font-size:13px;opacity:0;pointer-events:none;transition:.2s;z-index:10}.toast.show{opacity:1;transform:translate(-50%,0)}details summary{cursor:pointer;list-style:none}details summary::-webkit-details-marker{display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:760px){.step-map{grid-template-columns:repeat(2,1fr)}.canvas-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-steps{grid-template-columns:1fr}.card-head{flex-direction:column}.hero{padding:42px 0}.topnote{display:none}}
+@media(max-width:480px){.wrap{width:min(100% - 24px,1120px)}.canvas-grid{grid-template-columns:1fr}.block{min-height:0}.section-head{align-items:start;flex-direction:column}.card-head,.card-body{padding-left:15px;padding-right:15px}.prompt{font-size:12px}.hero h1{font-size:39px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span class="brand">STARTUP STUDIO · STUDENT EDITION</span><span class="topnote">คิดจากปัญหา · ทดสอบด้วยหลักฐาน · สร้าง Lean Canvas</span></div></div>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">AI PROMPT KIT / LEAN CANVAS</div>
+<h1>เปลี่ยนผลิตภัณฑ์ที่มี<br>ให้เป็น Startup ที่มีเหตุผล</h1>
+<p>คู่มือ Prompt ทีละขั้นสำหรับนักศึกษาที่มีผลิตภัณฑ์คัดเลือกแล้ว ตรวจว่าควรคงไว้ ปรับปรุง ปรับทิศทาง หรือทดสอบใหม่ ก่อนสรุปเป็น Lean Canvas ครบ 9 Block</p>
+<div class="hero-tags"><span class="pill"><b>9/9</b> Lean Canvas Blocks</span><span class="pill">8 ขั้นคิด + 1 Canvas</span><span class="pill">หลักฐานมาก่อนความมั่นใจ</span></div>
+<div class="hero-actions"><a class="btn btn-lime" href="#prompts">เริ่มใช้ Prompt ↓</a><a class="btn btn-ghost" href="#canvas">ดู Template 9 Block</a></div>
+</div></header>
+<main class="page"><div class="wrap">
+<div class="notice"><div class="icon">✳</div><div><strong>เป้าหมายไม่ใช่ Canvas ที่ “ดูสมบูรณ์” แต่เป็น Canvas ที่ตรวจสอบได้</strong><p>AI ช่วยจัดความคิดและตั้งคำถามได้ แต่ไม่สามารถยืนยันความต้องการของตลาดแทนการคุยหรือทดลองกับลูกค้าจริงได้ ทุกช่องที่ยังไม่มีหลักฐานต้องติดป้ายว่า “สมมติฐาน” หรือ “ยังไม่ทราบ”</p></div></div>
+<section id="prompts">
+<div class="section-head"><div><h2>Prompt ทีละขั้น</h2><p>คัดลอก Prompt กลางครั้งเดียว แล้วใช้ Prompt ของแต่ละขั้นในแชตเดิมตามลำดับ</p></div><button class="btn btn-small btn-copy" data-copy="global">คัดลอก Prompt กลาง</button></div>
+<nav class="step-map" aria-label="ขั้นตอน"><a class="map-item" href="#step0"><span class="num">0</span>โจทย์และข้อจำกัด</a><a class="map-item" href="#step1"><span class="num">1</span>นิยามผลิตภัณฑ์</a><a class="map-item" href="#step2"><span class="num">2</span>ปัญหาและลูกค้า</a><a class="map-item" href="#step3"><span class="num">3</span>ตรวจความเหมาะสม</a><a class="map-item" href="#step4"><span class="num">4</span>ตัดสินใจปรับ</a><a class="map-item" href="#step5"><span class="num">5</span>Lean Canvas 9 ช่อง</a><a class="map-item" href="#step6"><span class="num">6</span>ทดสอบสมมติฐาน</a><a class="map-item" href="#step7"><span class="num">7</span>MVP / Prototype</a><a class="map-item" href="#step8"><span class="num">8</span>เตรียมประกวด</a></nav>
+
+<article class="card global-card" id="global"><div class="card-head"><div class="card-title"><span class="step-badge">AI</span><div><h3>Prompt กลาง — ตั้งบทบาทและกติกา</h3><p>วางข้อความนี้ก่อนเริ่ม STEP 0 ในแชตใหม่</p></div></div><button class="btn btn-small btn-copy" data-copy="global">คัดลอก</button></div><div class="card-body"><div class="prompt" id="text-global">คุณคือ Startup Coach ผู้เชี่ยวชาญด้านการประเมินผลิตภัณฑ์ การค้นหา Product-Market Fit การพัฒนานวัตกรรม และ Lean Canvas
+
+ฉันมีผลิตภัณฑ์ที่ผ่านการคัดเลือกมาแล้ว หน้าที่ของคุณคือช่วยตรวจสอบอย่างเป็นกลางว่า ผลิตภัณฑ์นี้แก้ปัญหาที่สำคัญให้ลูกค้ากลุ่มที่ชัดเจนหรือไม่ และควรคงไว้ (Keep), ปรับปรุง (Improve), ปรับทิศทาง (Pivot) หรือทดสอบใหม่/หยุด (Re-test/Stop) โดยอธิบายเหตุผลและหลักฐานที่ต้องใช้
+
+กติกาการทำงาน:
+- ทำงานทีละขั้น หยุดรอคำตอบหรือการยืนยันจากฉันก่อนเริ่มขั้นถัดไป
+- ถามไม่เกิน 5 คำถามต่อครั้ง ใช้ตัวเลือกเมื่อเหมาะสม และเปิดให้ตอบ “อื่น ๆ”
+- ห้ามคิดข้อมูลหรือคำตอบแทนฉัน หากข้อมูลไม่พอให้ถามเพิ่ม
+- แยกข้อมูลเป็น [ข้อมูลจากทีม] [หลักฐานจากผู้ใช้] [ข้อเท็จจริงพร้อมแหล่งอ้างอิง] [สมมติฐาน] [ยังไม่ทราบ]
+- ห้ามแต่งสถิติ ขนาดตลาด คู่แข่ง ผลสัมภาษณ์ หรือผลทดสอบ
+- อย่าคิดผลิตภัณฑ์ใหม่หรือเสนอให้ Pivot เพียงเพราะมีไอเดียอื่นที่ดูน่าสนใจกว่า
+- ก่อนเสนอการเปลี่ยนแก่นผลิตภัณฑ์ ให้แสดงเหตุผลและขอความเห็นจากฉันก่อน
+- อย่าเสนอ AI เพียงเพราะเป็นกระแส ต้องอธิบายคุณค่าที่ AI เพิ่มและความเสี่ยง
+- ใช้ภาษาไทยเข้าใจง่าย เหมาะกับนักศึกษา
+- หากยังไม่มีข้อมูลจากผู้ใช้ ให้เขียนว่าเป็นแผนทดสอบ ไม่ใช่ผลจริง
+- ผลลัพธ์สุดท้ายต้องมี Lean Canvas ครบ 9 Block ตามรูปแบบที่กำหนดใน STEP 5
+
+เริ่มต้นด้วย STEP 0 เท่านั้น ห้ามข้ามขั้น</div><p class="how"><b>วิธีใช้:</b> คัดลอกไปวางในแชต AI ก่อน จากนั้นวาง Prompt ของ STEP 0 แล้วทำตามลำดับในแชตเดียวกัน</p></div></article>
+
+<div class="section-head"><div><h2>ทำงานทีละขั้น</h2><p>วาง Prompt ของแต่ละ Step หลังนักศึกษาตอบคำถามและยืนยันผลของขั้นก่อนหน้า</p></div></div>
+
+<article class="card" id="step0"><div class="card-head"><div class="card-title"><span class="step-badge">0</span><div><h3>เข้าใจโจทย์และผลิตภัณฑ์เดิม</h3><p>เก็บบริบทก่อนให้ AI วิเคราะห์</p></div></div><button class="btn btn-small btn-copy" data-copy="text-0">คัดลอก STEP 0</button></div><div class="card-body"><div class="prompt" id="text-0">เริ่ม STEP 0: ถามฉันเพื่อทำความเข้าใจผลิตภัณฑ์และโจทย์ โดยถามเรื่องชื่อและคำอธิบายผลิตภัณฑ์ ผลิตภัณฑ์ทำอะไร ใครเป็นผู้ใช้ ปัญหาที่ทีมเชื่อว่ากำลังแก้ เหตุผลที่เลือกผลิตภัณฑ์ หลักฐานจากผู้ใช้ที่มี ธีมและเกณฑ์ของ Startup Contest รวมถึงทักษะทีม เวลา งบประมาณ และเทคโนโลยีที่มี
+
+ถามไม่เกิน 5 คำถามต่อครั้ง หลังฉันตอบ ให้สรุปข้อมูลและสิ่งที่ยังขาด แล้วถามว่าฉันยืนยันหรือไม่ ห้ามประเมินหรือเปลี่ยนผลิตภัณฑ์จนกว่าฉันจะยืนยันข้อมูลพื้นฐาน</div><p class="how"><b>ผลที่ต้องได้:</b> ข้อมูลผลิตภัณฑ์และข้อจำกัดที่ทีมตรวจทานแล้ว</p></div></article>
+
+<article class="card" id="step1"><div class="card-head"><div class="card-title"><span class="step-badge">1</span><div><h3>นิยามผลิตภัณฑ์ให้ชัด</h3><p>ป้องกันการเริ่มจากฟีเจอร์แทนปัญหา</p></div></div><button class="btn btn-small btn-copy" data-copy="text-1">คัดลอก STEP 1</button></div><div class="card-body"><div class="prompt" id="text-1">เริ่ม STEP 1: ช่วยเขียนคำอธิบายผลิตภัณฑ์ของทีมในรูปแบบ “ผลิตภัณฑ์นี้ช่วย [กลุ่มผู้ใช้] แก้ [ปัญหาหรือทำงานอะไร] ด้วย [วิธีแก้] เพื่อให้เกิด [ผลลัพธ์ที่ผู้ใช้ต้องการ]”
+
+ตรวจว่าผลิตภัณฑ์ทำอะไร ผู้ใช้คือใคร ปัญหาชัดหรือยัง และผลลัพธ์วัดหรือสังเกตได้หรือไม่ แยก [ข้อมูลจากทีม] [สมมติฐาน] และ [ยังไม่ทราบ] หากไม่ชัด ให้ถามฉันเพิ่ม ห้ามเสนอผลิตภัณฑ์ใหม่ รอฉันยืนยันคำอธิบายก่อนจบขั้นนี้</div><p class="how"><b>ผลที่ต้องได้:</b> คำอธิบายผลิตภัณฑ์ 1–2 ประโยคที่ทีมยอมรับร่วมกัน</p></div></article>
+
+<article class="card" id="step2"><div class="card-head"><div class="card-title"><span class="step-badge">2</span><div><h3>ตรวจปัญหาและลูกค้า</h3><p>ค้นหาว่าปัญหาเร่งด่วนกับใคร และแก้อย่างไรอยู่แล้ว</p></div></div><button class="btn btn-small btn-copy" data-copy="text-2">คัดลอก STEP 2</button></div><div class="card-body"><div class="prompt" id="text-2">เริ่ม STEP 2: ช่วยตรวจสอบปัญหาและลูกค้าของผลิตภัณฑ์เดิม โดยพิจารณาว่าใครประสบปัญหานี้มากที่สุด ปัญหาเกิดเมื่อไรและบ่อยแค่ไหน มีผลเสียด้านเวลา เงิน ความเสี่ยง หรือความยุ่งยากอย่างไร ลูกค้าแก้ปัญหาแบบใดในปัจจุบัน และใครน่าจะเป็น Early Adopters
+
+แยกผู้ใช้ ผู้ซื้อ และผู้ตัดสินใจ หากเป็นคนละกลุ่ม สรุปข้อค้นพบพร้อมป้าย [มีหลักฐาน] [สมมติฐาน] หรือ [ยังไม่ทราบ] ถ้ายังไม่มีหลักฐาน ให้เสนอคำถามสัมภาษณ์แบบไม่ชี้นำและวิธีสังเกตพฤติกรรม ห้ามสร้างคำตอบลูกค้าขึ้นเอง
+
+ถามฉันเพื่อให้ยืนยันกลุ่มลูกค้าเป้าหมายก่อนจบขั้นนี้</div><p class="how"><b>ผลที่ต้องได้:</b> กลุ่มลูกค้าเฉพาะเจาะจง ปัญหาหลัก และช่องว่างของหลักฐาน</p></div></article>
+
+<article class="card" id="step3"><div class="card-head"><div class="card-title"><span class="step-badge">3</span><div><h3>ตรวจความเหมาะสมของผลิตภัณฑ์</h3><p>วินิจฉัยก่อนเสนอให้แก้</p></div></div><button class="btn btn-small btn-copy" data-copy="text-3">คัดลอก STEP 3</button></div><div class="card-body"><div class="prompt" id="text-3">เริ่ม STEP 3: ประเมินความเชื่อมโยงระหว่าง (1) ปัญหาของลูกค้า (2) กลุ่มลูกค้า (3) วิธีแก้ของผลิตภัณฑ์ (4) คุณค่าหรือผลลัพธ์ (5) ทางเลือกที่ลูกค้าใช้อยู่
+
+ทำตาราง “สิ่งที่ทีมเชื่อ | หลักฐานที่มี | จุดที่ยังไม่ชัด | ความเสี่ยง” แล้วพิจารณาความสำคัญของปัญหา ความชัดเจนของลูกค้า ความเหมาะสมของวิธีแก้ และหลักฐานความต้องการ ห้ามให้คะแนนลอย ๆ โดยไม่มีเหตุผล
+
+สรุปสถานะเบื้องต้นหนึ่งข้อ: Keep (คงไว้), Improve (ปรับปรุง), Pivot (ปรับทิศทาง) หรือ Re-test/Stop (ทดสอบใหม่/หยุด) พร้อมเหตุผล ระดับความมั่นใจ และข้อมูลที่ต้องหาต่อ อย่าเพิ่งเปลี่ยนผลิตภัณฑ์ และถามฉันว่าการวินิจฉัยนี้ยุติธรรมหรือไม่</div><p class="how"><b>ผลที่ต้องได้:</b> วินิจฉัยที่โยงกับหลักฐาน ไม่ใช่ความชอบส่วนตัวของ AI</p></div></article>
+
+<article class="card" id="step4"><div class="card-head"><div class="card-title"><span class="step-badge">4</span><div><h3>ตัดสินใจว่าควรปรับอะไร</h3><p>รักษาแก่นผลิตภัณฑ์ไว้ เว้นแต่มีเหตุผลให้เปลี่ยน</p></div></div><button class="btn btn-small btn-copy" data-copy="text-4">คัดลอก STEP 4</button></div><div class="card-body"><div class="prompt" id="text-4">เริ่ม STEP 4: จากการวินิจฉัยที่เรายืนยันแล้ว ให้เสนอการปรับปรุงโดยจัดเป็น “จำเป็นต้องปรับก่อน | ควรทดสอบก่อนตัดสินใจ | ปรับได้ภายหลัง | ยังไม่มีเหตุผลให้เปลี่ยน”
+
+แต่ละข้อเสนอให้ระบุส่วนที่จะปรับ ปัญหาที่แก้ เหตุผลหรือหลักฐาน ผลกระทบต่อผู้ใช้ ความพยายาม/ความเสี่ยง และวิธีทดสอบว่าได้ผลจริงหรือไม่ แยกการปรับเล็กน้อยจากการเปลี่ยนแก่นผลิตภัณฑ์
+
+หากเสนอ Pivot ให้แสดงเหตุผล หลักฐานสนับสนุนและคัดค้าน ผลกระทบ และทางเลือกที่ทีมมี ก่อนขออนุมัติจากฉัน ห้ามถือว่าทีมอนุมัติแล้วจนกว่าฉันจะตอบยืนยัน สรุปผลิตภัณฑ์ฉบับที่ทีมเลือกใช้ทำ Lean Canvas</div><p class="how"><b>ผลที่ต้องได้:</b> ผลิตภัณฑ์ฉบับยืนยันแล้วก่อนนำไปสร้าง Canvas</p></div></article>
+
+<article class="card" id="step5"><div class="card-head"><div class="card-title"><span class="step-badge">5</span><div><h3>สร้าง Lean Canvas ให้ครบ 9 Block</h3><p>ใช้ผลิตภัณฑ์ฉบับที่ทีมยืนยันแล้วเท่านั้น</p></div></div><button class="btn btn-small btn-copy" data-copy="text-5">คัดลอก STEP 5</button></div><div class="card-body"><div class="prompt" id="text-5">เริ่ม STEP 5: สร้าง Lean Canvas สำหรับผลิตภัณฑ์ฉบับที่ทีมยืนยันแล้ว โดยต้องแสดงเป็นตารางเดียว มี 9 แถว แถวละ 1 Block และมีคอลัมน์ “Block | เนื้อหาของ Block | สถานะหลักฐาน | สิ่งที่ต้องตรวจสอบต่อ”
+
+ใช้ชื่อ Block เหล่านี้ทุกครั้ง ห้ามตัด รวม หรือเปลี่ยนชื่อ และเรียงตามลำดับ:
+1. Problem — ปัญหาหลัก 1–3 ข้อ และทางเลือกที่ลูกค้าใช้อยู่ (Existing Alternatives)
+2. Customer Segments — กลุ่มลูกค้าเป้าหมายและ Early Adopters
+3. Unique Value Proposition — คุณค่าที่ชัดเจน เฉพาะเจาะจง และแตกต่าง
+4. Solution — วิธีแก้หรือฟีเจอร์หลัก 1–3 ข้อที่เชื่อมกับปัญหา
+5. Channels — ช่องทางเข้าถึง ทดลองใช้ และหาลูกค้า
+6. Revenue Streams — ผู้จ่ายเงิน รูปแบบรายได้ หรือสิ่งที่ต้องทดสอบ
+7. Cost Structure — ต้นทุนหลักในการสร้าง ส่งมอบ และดูแลผลิตภัณฑ์
+8. Key Metrics — ตัวชี้วัดพฤติกรรมหรือผลลัพธ์ที่บอกว่าผู้ใช้ได้รับคุณค่าจริง
+9. Unfair Advantage — ข้อได้เปรียบที่ลอกเลียนแบบยาก หากไม่มีหลักฐานให้เขียน “ยังไม่มีหลักฐาน”
+
+ทุก Block ต้องติดป้าย [มีหลักฐาน] [สมมติฐาน] หรือ [ยังไม่ทราบ] หากข้อมูลไม่พอ ห้ามเว้นว่างหรือแต่งคำตอบ ให้เขียน “ยังไม่ทราบ” และวิธีตรวจสอบต่อ ห้ามเขียนคำกว้าง ๆ เช่น “ใช้งานง่าย” หรือ “AI อัจฉริยะ” โดยไม่อธิบายให้ชัด
+
+หลังตาราง ให้ตรวจความสอดคล้องระหว่าง Problem–Customer–UVP–Solution–Channels–Revenue และตรวจนับชื่อ Block ว่าครบ 9/9 ไม่ซ้ำ ไม่ขาด หากไม่ครบ ให้แก้ก่อนแสดงผล สรุปสมมติฐานสำคัญและถามฉันตรวจทาน Canvas</div><p class="how"><b>ผลที่ต้องได้:</b> ตาราง 9 แถวครบถ้วน พร้อมสถานะหลักฐานและสิ่งที่ต้องตรวจสอบต่อ</p></div></article>
+
+<article class="card" id="step6"><div class="card-head"><div class="card-title"><span class="step-badge">6</span><div><h3>ทดสอบสมมติฐานที่เสี่ยงที่สุด</h3><p>หาหลักฐานก่อนเชื่อว่า Canvas ถูกต้อง</p></div></div><button class="btn btn-small btn-copy" data-copy="text-6">คัดลอก STEP 6</button></div><div class="card-body"><div class="prompt" id="text-6">เริ่ม STEP 6: จาก Lean Canvas ที่เราตรวจแล้ว จัดอันดับสมมติฐานที่เสี่ยงที่สุด 3 ข้อ โดยดูผลกระทบหากผิดและความไม่แน่นอน ระบุสิ่งที่อาจทำให้ผลิตภัณฑ์ล้มเหลว เหตุผลที่ลูกค้าอาจไม่เปลี่ยนจากวิธีเดิม และความเสี่ยงด้าน AI/ข้อมูล/ความเป็นส่วนตัว/ความถูกต้อง/อคติ/ความปลอดภัย
+
+จัดทำตาราง “สมมติฐาน | ทำไมเสี่ยง | วิธีทดสอบที่เร็วและประหยัด | ผู้ที่ต้องทดสอบ | เกณฑ์ผ่าน/ไม่ผ่าน | การตัดสินใจถ้าผลไม่ผ่าน” ใช้การสัมภาษณ์พฤติกรรมที่ผ่านมา การสังเกต หรือ Prototype Test ที่ไม่ชี้นำ
+
+อย่าสร้างผลทดสอบขึ้นเอง ถ้ายังไม่ได้ทดลองให้ระบุว่าเป็นแผนทดสอบ ให้ฉันเลือกสมมติฐานที่จะทดสอบก่อน</div><p class="how"><b>ผลที่ต้องได้:</b> แผนทดลองที่วัดได้ ไม่ใช่การคาดเดาว่าลูกค้าจะชอบ</p></div></article>
+
+<article class="card" id="step7"><div class="card-head"><div class="card-title"><span class="step-badge">7</span><div><h3>ออกแบบ MVP หรือ AI Prototype</h3><p>สร้างเฉพาะสิ่งที่จำเป็นต่อการทดสอบ</p></div></div><button class="btn btn-small btn-copy" data-copy="text-7">คัดลอก STEP 7</button></div><div class="card-body"><div class="prompt" id="text-7">เริ่ม STEP 7: ออกแบบ MVP ที่เล็กที่สุดเพื่อทดสอบสมมติฐานที่ฉันเลือก ระบุผู้ใช้ทดลองกลุ่มแรก งานหลักที่ MVP ต้องทำ ฟีเจอร์จำเป็นและสิ่งที่ยังไม่ควรทำ วิธีเก็บพฤติกรรม/ข้อเสนอแนะ ตัวชี้วัด เกณฑ์ผ่าน/ไม่ผ่าน เวลาและทรัพยากรโดยประมาณ
+
+หากใช้ AI ให้อธิบายว่า AI ทำอะไรและจำเป็นเพราะอะไร ข้อมูลใดต้องใช้ ความผิดพลาดที่อาจเกิดขึ้น วิธีให้มนุษย์ตรวจสอบ และมาตรการคุ้มครองข้อมูล หากทีมสร้างระบบจริงไม่ได้ ให้เสนอ mockup, no-code หรือบริการทำด้วยมือ พร้อมระบุชัดว่าส่วนใดทำงานจริงและส่วนใดจำลอง
+
+อย่าอ้างว่ามีความสามารถที่ยังไม่ได้สร้างหรือทดสอบ</div><p class="how"><b>ผลที่ต้องได้:</b> MVP ที่ทดสอบสมมติฐานได้ และบอกข้อจำกัดตรงไปตรงมา</p></div></article>
+
+<article class="card" id="step8"><div class="card-head"><div class="card-title"><span class="step-badge">8</span><div><h3>เตรียมเรื่องเล่าสำหรับ Startup Contest</h3><p>นำเสนอทั้งคุณค่า หลักฐาน และความเสี่ยง</p></div></div><button class="btn btn-small btn-copy" data-copy="text-8">คัดลอก STEP 8</button></div><div class="card-body"><div class="prompt" id="text-8">เริ่ม STEP 8: เตรียมสรุปสำหรับ Startup Contest โดยใช้ข้อมูลที่เรายืนยันแล้วเท่านั้น ครอบคลุม (1) ผลิตภัณฑ์ช่วยใครและทำอะไร (2) ปัญหาและหลักฐาน (3) สถานะ Keep/Improve/Pivot/Re-test และสิ่งที่ปรับ (4) Lean Canvas ล่าสุดครบ 9 Block (5) MVP/Prototype และสิ่งที่ทดสอบแล้ว (6) รูปแบบรายได้ ช่องทาง ต้นทุน (7) ความเสี่ยงที่ยังเหลือ (8) แผนถัดไปและสิ่งที่ต้องการจากกรรมการ
+
+แยกผลทดสอบจริงออกจากแผนทดสอบและสมมติฐาน ห้ามแต่งขนาดตลาด รายได้ หรือผลตอบรับลูกค้า หากมีคำถามที่ยังตอบไม่ได้ ให้บอกตรง ๆ พร้อมแผนหาคำตอบ
+
+ปิดท้ายด้วยคำถามยาก 5 ข้อที่กรรมการอาจถาม และแนวทางตอบที่ซื่อสัตย์ รวมถึง 3 ขั้นตอนถัดไปที่ทีมทำได้จริง</div><p class="how"><b>ผลที่ต้องได้:</b> เรื่องนำเสนอที่ไม่กล่าวอ้างเกินหลักฐานและพร้อมตอบคำถามกรรมการ</p></div></article>
+</section>
+
+<section id="canvas"><div class="section-head"><div><h2>Lean Canvas Template · 9 Blocks</h2><p>ใช้เป็นแผ่นตรวจทานผลจาก AI — หนึ่งช่องต่อหนึ่ง Block</p></div><button class="btn btn-small btn-copy" data-copy="canvas-template">คัดลอก Template</button></div>
+<div class="canvas-grid">
+<div class="block"><h3><span class="block-num">01</span> Problem</h3><p>ปัญหาหลัก 1–3 ข้อ ลูกค้าเดือดร้อนอย่างไร?</p><div class="write-lines">ปัญหา:<br>ทางเลือกเดิม (Existing Alternatives):<br>หลักฐาน/สมมติฐาน:</div></div>
+<div class="block"><h3><span class="block-num">02</span> Customer Segments</h3><p>ใครมีปัญหา? ใครคือกลุ่มแรกที่จะลอง?</p><div class="write-lines">ลูกค้าเป้าหมาย:<br>Early Adopters:<br>ผู้ใช้ / ผู้ซื้อ / ผู้ตัดสินใจ:</div></div>
+<div class="block"><h3><span class="block-num">03</span> Unique Value Proposition</h3><p>คุณค่าอะไรที่ชัดเจน แตกต่าง และสำคัญ?</p><div class="write-lines">ข้อความคุณค่า:<br>ผลลัพธ์ที่ลูกค้าได้:<br>สิ่งที่แตกต่าง:</div></div>
+<div class="block"><h3><span class="block-num">04</span> Solution</h3><p>วิธีแก้หลัก 1–3 ข้อที่เชื่อมกับปัญหา</p><div class="write-lines">วิธีแก้หลัก:<br>ความสามารถที่จำเป็น:<br>บทบาท AI (ถ้ามี):</div></div>
+<div class="block"><h3><span class="block-num">05</span> Channels</h3><p>เข้าถึง ทดลองใช้ และหาลูกค้าผ่านช่องทางใด?</p><div class="write-lines">ช่องทางเข้าถึง:<br>วิธีทดลองใช้:<br>สมมติฐานที่ต้องทดสอบ:</div></div>
+<div class="block"><h3><span class="block-num">06</span> Revenue Streams</h3><p>ใครจ่าย จ่ายเพื่ออะไร และจ่ายแบบไหน?</p><div class="write-lines">ผู้จ่ายเงิน:<br>รูปแบบรายได้/ราคา:<br>สิ่งที่ต้องพิสูจน์:</div></div>
+<div class="block"><h3><span class="block-num">07</span> Cost Structure</h3><p>ต้นทุนสำคัญในการสร้างและส่งมอบคืออะไร?</p><div class="write-lines">ต้นทุนพัฒนา:<br>ต้นทุนดำเนินงาน:<br>ต้นทุน AI/ข้อมูล/บริการ:</div></div>
+<div class="block"><h3><span class="block-num">08</span> Key Metrics</h3><p>วัดพฤติกรรมหรือคุณค่าที่เกิดขึ้นจริง</p><div class="write-lines">ตัวชี้วัดหลัก:<br>เกณฑ์ความสำเร็จ:<br>ช่วงเวลาวัดผล:</div></div>
+<div class="block"><h3><span class="block-num">09</span> Unfair Advantage</h3><p>ข้อได้เปรียบที่ลอกเลียนแบบได้ยาก</p><div class="write-lines">ข้อได้เปรียบ:<br>หลักฐานว่าป้องกันการลอกได้:<br>ถ้ายังไม่มี ให้ระบุ “ยังไม่มีหลักฐาน”</div></div>
+</div>
+<div class="prompt" id="canvas-template" style="margin-top:14px">LEAN CANVAS — [ชื่อผลิตภัณฑ์และเวอร์ชันที่ทีมยืนยัน]
+
+| Block | เนื้อหา | สถานะหลักฐาน | สิ่งที่ต้องตรวจสอบต่อ |
+|---|---|---|---|
+| 1. Problem |  |  |  |
+| 2. Customer Segments |  |  |  |
+| 3. Unique Value Proposition |  |  |  |
+| 4. Solution |  |  |  |
+| 5. Channels |  |  |  |
+| 6. Revenue Streams |  |  |  |
+| 7. Cost Structure |  |  |  |
+| 8. Key Metrics |  |  |  |
+| 9. Unfair Advantage |  |  |  |
+
+ตรวจนับ: ครบ 9/9 Block? [ ] ใช่  [ ] ไม่ใช่
+สถานะผลิตภัณฑ์: [ ] Keep  [ ] Improve  [ ] Pivot  [ ] Re-test/Stop
+สมมติฐานเสี่ยงที่สุด 3 ข้อ:
+1.
+2.
+3.</div>
+</section>
+
+<section id="google-sites"><div class="section-head"><div><h2>นำไปเผยแพร่ใน Google Sites</h2><p>ไฟล์ HTML นี้เป็นไฟล์ต้นฉบับ — Google Sites ไม่ได้ทำหน้าที่เป็นพื้นที่โฮสต์ไฟล์ HTML โดยตรงทุกกรณี</p></div></div>
+<div class="notice"><div class="icon">↗</div><div><strong>วิธีแนะนำสำหรับไฟล์นี้: โฮสต์ไฟล์ก่อน แล้วฝังด้วย URL</strong><p>หน้าเว็บมี CSS และ JavaScript สำหรับปุ่มคัดลอกและการทำงานบนหน้า การฝังโค้ดโดยตรงอาจต้องปรับขนาดหรือรูปแบบการวางโค้ดใน Embed frame ให้ทดสอบ Preview ก่อน Publish</p></div></div>
+<div class="site-steps">
+<div class="site-step"><h3>เตรียมไฟล์ HTML</h3><p>ดาวน์โหลดไฟล์นี้ แล้วเปลี่ยนชื่อให้จำง่าย เช่น <span class="code-mini">lean-canvas-coach.html</span> ตรวจเปิดในเบราว์เซอร์ก่อนอัปโหลด</p></div>
+<div class="site-step"><h3>โฮสต์ไฟล์บนเว็บที่เปิดสาธารณะ</h3><p>อัปโหลดไฟล์ไปยังบริการโฮสต์ Static Site เช่น GitHub Pages หรือบริการโฮสต์เว็บที่โรงเรียนอนุมัติ แล้วเปิด URL ที่ได้เพื่อตรวจว่าเว็บเข้าถึงได้โดยไม่ต้องล็อกอิน</p></div>
+<div class="site-step"><h3>ฝังหน้าเว็บใน Google Sites</h3><p>เปิด Google Sites ในโหมดแก้ไข → เลือก <b>Insert (แทรก) → Embed (ฝัง) → By URL (ตาม URL)</b> → วาง URL เว็บไซต์ที่โฮสต์ → Insert</p></div>
+<div class="site-step"><h3>ปรับขนาดและเผยแพร่</h3><p>ลากขอบกรอบฝังให้กว้างและสูงพอ → ใช้ Preview ตรวจบน Desktop และมือถือ → กด <b>Publish (เผยแพร่)</b> แล้วเปิด URL เว็บไซต์จริงทดสอบปุ่มคัดลอกและทุกส่วนอีกครั้ง</p></div>
+</div>
+<details class="card" style="margin-top:14px"><summary class="card-head"><div class="card-title"><span class="step-badge">+</span><div><h3>ต้องการวางโค้ดตรงใน Google Sites?</h3><p>เหมาะกับ Snippet หรือส่วนประกอบเฉพาะ ไม่ใช่วิธีที่แนะนำสำหรับไฟล์เต็ม</p></div></div></summary><div class="card-body"><ol style="margin-top:0;font-size:14px"><li>ในหน้าแก้ไข Google Sites เลือก <b>Insert → Embed → Embed code</b></li><li>วาง HTML snippet ที่ต้องการฝัง โดย CSS อยู่ในแท็ก <span class="code-mini">&lt;style&gt;...&lt;/style&gt;</span> และ JavaScript อยู่ใน <span class="code-mini">&lt;script&gt;...&lt;/script&gt;</span></li><li>กด Next → Insert ปรับขนาดกรอบ แล้ว Preview ก่อน Publish</li></ol><p style="font-size:13px;color:var(--muted)">สำหรับไฟล์นี้ไม่ควรวางเอกสาร HTML ทั้งชุดพร้อม <span class="code-mini">&lt;!doctype html&gt;</span>, <span class="code-mini">&lt;head&gt;</span> และ <span class="code-mini">&lt;body&gt;</span> ลงไปโดยไม่ทดสอบ เพราะช่องฝังโค้ดอาจต้องใช้เฉพาะส่วนที่ฝังได้ และแสดงผลภายในกรอบ (iframe) หากมีปัญหาให้ใช้วิธีโฮสต์ URL ด้านบน</p><p class="sources">คู่มือ Google Sites: <a href="https://support.google.com/sites/answer/90569" target="_blank" rel="noopener">Add Google files, videos, website content, & more</a></p></div></details>
+</section>
+<div class="footer">Lean Canvas เป็นเครื่องมือสรุปสมมติฐาน ไม่ใช่หลักฐานยืนยันตลาด · ให้นักศึกษาทดสอบกับผู้ใช้จริงและปรับ Canvas เมื่อได้ข้อมูลใหม่</div>
+</div></main>
+<div class="toast" id="toast" role="status" aria-live="polite">คัดลอกแล้ว</div>
+<script>
+const toast=document.getElementById('toast');let toastTimer;
+async function copyText(text){try{await navigator.clipboard.writeText(text)}catch(e){const t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),1800)}
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>{const id=button.dataset.copy;const el=document.getElementById(id);if(el)copyText(el.innerText)}));
+</script>
+</body>
+</html>
